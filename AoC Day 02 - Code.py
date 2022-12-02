@@ -43,25 +43,25 @@ with open("//fld5filer/iofdim/Sections/CSA/15 Staff folders/Margarita/Python/AoC
             score += 0
             if curr_line[0] == 'A':
                 score += 3
-            if curr_line[0] == 'B':
+            elif curr_line[0] == 'B':
                 score += 1
-            if curr_line[0] == 'C':
+            else:
                 score += 2
         if curr_line[1] == 'Y':
             score +=3
             if curr_line[0] == 'A':
                 score += 1
-            if curr_line[0] == 'B':
+            elif curr_line[0] == 'B':
                 score += 2
-            if curr_line[0] == 'C':
+            else:
                 score += 3
         if curr_line[1] == 'Z':
             score += 6
             if curr_line[0] == 'A':
                 score += 2
-            if curr_line[0] == 'B':
+            elif curr_line[0] == 'B':
                 score += 3
-            if curr_line[0] == 'C':
+            else:
                 score += 1
                 
 print(score)
